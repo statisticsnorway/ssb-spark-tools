@@ -2,8 +2,10 @@ name: Platforms
 
 on:
   push:
+    branches:
+      - main
+      - master
   pull_request:
-    types: [opened, synchronize, reopened]
 
 jobs:
   tests:
@@ -14,21 +16,18 @@ jobs:
       matrix:
         include:
           - { python: "3.13", os: "ubuntu-latest" }
-          - { python: "3.10", os: "ubuntu-latest" }
-          - { python: "3.10", os: "macos-latest" }
-          - { python: "3.10", os: "windows-latest" }
-          - { python: "3.9", os: "ubuntu-latest" }
-          - { python: "3.8", os: "ubuntu-latest" }
+          - { python: "3.13", os: "macos-latest" }
+          - { python: "3.13", os: "windows-latest" }
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Install poetry
-        run: pipx install poetry==2.3.3
+        run: pipx install poetry==2.3.4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
           cache: "poetry"
