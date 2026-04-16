@@ -61,7 +61,7 @@ poetry-plugin-export = ">=1.9"
 [tool.ruff]
 force-exclude = true  # Apply excludes to pre-commit
 show-fixes = true
-src = ["src", "tests"]
+src = ["ssb_sparktools", "pytests"]
 target-version = "py312"  # Minimum Python version supported
 include = ["*.py", "*.pyi", "**/pyproject.toml", "*.ipynb"]
 extend-exclude = [
