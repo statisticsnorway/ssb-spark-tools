@@ -10,6 +10,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
 
     steps:
       - uses: actions/checkout@v6
@@ -32,5 +34,4 @@ jobs:
 
       - name: Publish package on PyPI
         uses: pypa/gh-action-pypi-publish@v1.14.0
-        with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
+
