@@ -1,12 +1,13 @@
 # SSB Spark Tools
 
-> A collection of data processing Spark functions for the use in Statistics Norway (SSB)
-
 [![PyPI version](https://img.shields.io/pypi/v/ssb_spark_tools.svg)](https://pypi.python.org/pypi/ssb_spark_tools/)
-[![Status](https://img.shields.io/pypi/status/ssb_spark_tools.svg)](https://pypi.python.org/pypi/ssb_spark_tools/)
+![Status](https://img.shields.io/badge/status-deprecated-red)
 [![License](https://img.shields.io/pypi/l/ssb_spark_tools.svg)](https://pypi.python.org/pypi/ssb_spark_tools/)
 
 The SSB Spark Tools Library is a colection of Data processing functions for the use in Data processing in Statistics Norway
+
+> [!WARNING]
+> This project is deprecated and no longer maintained.
 
 ## Installation
 
