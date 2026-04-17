@@ -1,6 +1,6 @@
 [project]
 name = "ssb-spark-tools"
-version = "0.1.13"
+version = "0.1.14"
 description = "A collection of data processing Spark functions for the use in Statistics Norway."
 authors = [{ name = "Arne Sørli", email = "arne.sorli@ssb.no" }]
 license = "MIT"
